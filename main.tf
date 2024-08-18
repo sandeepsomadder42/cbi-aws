@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "eu-east-1a"  # Replace with your actual region
+  region = "us-east-1"  # Replace with your actual region
 }
 
 resource "aws_instance" "dev_ops_windows" {
