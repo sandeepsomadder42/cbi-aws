@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "dev_ops_windows" {
-  ami           = "ami-07d9456e59793a7d5"  # Replace with a valid Windows AMI ID for your region
+  ami           = "ami-07cc1bbe145f35b58"  # Replace with a valid Windows AMI ID for your region
   instance_type = "t2.micro"               # Choose the instance type based on your needs
 
   subnet_id              = aws_subnet.public_subnet_1a.id
