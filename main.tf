@@ -33,12 +33,12 @@ resource "aws_vpc" "my_vpc" {
   }
 }
 
-resource "aws_subnet" "private_subnet_1b" {
+resource "aws_subnet" "public_subnet_1a" {
   vpc_id            = aws_vpc.my_vpc.id
-  cidr_block        = "10.0.2.0/24"
-  availability_zone = "us-east-1b"  # Replace with your actual availability zone
+  cidr_block        = "10.0.1.0/24"
+  availability_zone = "us-east-1a"  # Replace with your actual availability zone
   tags = {
-    Name = "private-subnet-1b"
+    Name = "Public-subnet-1A"
   }
 }
 
