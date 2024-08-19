@@ -11,9 +11,11 @@ provider "aws" {
   region = "eu-north-1"
 }
 
-resource "aws_instance" "myserver" {
-  ami           = "ami-0c0e147c706360bd7"
-  instance_type = "t3.micro"
+resource "aws_instance" "example" {
+  count = 0  # Setting count to 0 will destroy the instance
+  # Additional configuration if necessary
+}
+
 
   tags = {
     Name = "SampleServer"
