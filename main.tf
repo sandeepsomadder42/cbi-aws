@@ -13,9 +13,8 @@ provider "aws" {
 
 resource "aws_instance" "decommission" { 
  count = 0 
- }  
 terraform import aws_instance.decommission i-01a024e54fedf96f5
-
+}
 
   
 
