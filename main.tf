@@ -17,7 +17,5 @@ resource "aws_instance" "SampleServer" {
 }
 
 
-}
-
   
 
