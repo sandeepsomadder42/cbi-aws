@@ -11,11 +11,10 @@ provider "aws" {
   region = "eu-north-1"
 }
 
-resource "aws_instance" "SampleServer" {
-  count = 0  # Setting count to 0 will destroy the instance
-  # Additional configuration if necessary
-}
-
+resource "aws_instance" "decommission" { 
+ count = 0 
+ instance_id = "i-01a024e54fedf96f5"
+ }  
 
   
 
