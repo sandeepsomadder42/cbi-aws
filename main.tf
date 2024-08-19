@@ -17,9 +17,6 @@ resource "aws_instance" "SampleServer" {
 }
 
 
-  tags = {
-    Name = "SampleServer"
-  }
 }
 
   
