@@ -14,7 +14,7 @@ provider "aws" {
 resource "aws_instance" "myserver" {
   ami           = "ami-0c0e147c706360bd7"
   instance_type = "t3.micro"
-
+vpc_security_group_ids = ["sg-0e00b2fb90a15b83d"]
   tags = {
     Name = "SampleServer"
   }
